@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TestSimulador</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <div class="contentenedor-principal">
+      <app-headeradmin></app-headeradmin>
+      <div id="wrapper" class="main-container-app">
+        <app-menuadmin></app-menuadmin>
+        <div id="content-wrapper">
+          <router-outlet></router-outlet>
+          <app-spinner></app-spinner>
+        </div>
+      </div>
+      <app-footeradmin></app-footeradmin>
+    </div>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>BancoAlimentos-Caritas</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <div class="layout-wrapper">
+      <app-headeradmin></app-headeradmin>
+      <div class="layout-sidebar">
+        <app-menuadmin></app-menuadmin>
+      </div>
+      <div class="layout-main-container">
+        <div class="layout-main">
+          <router-outlet></router-outlet>
+        </div>
+        <app-footeradmin></app-footeradmin>
+      </div>
+      <div class="layout-mask"></div>
+    </div>
+  </body>
+</html> -->

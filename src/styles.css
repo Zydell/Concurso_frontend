@@ -1,0 +1,130 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-indigo/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+@import "primeflex/primeflex.css";
+
+
+/* Demos */
+@import "assets/styles/flags/flags.css";
+@import "assets/styles/badges.css";
+@import "assets/styles/code.css";
+@import "assets/styles/layout.css";
+
+.contentenedor-principal {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+}
+
+#wrapper {
+  padding-left: 0;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.main-container-app {
+  display: flex;
+}
+
+#content-wrapper {
+  width: 100%;
+  overflow-y: auto;
+  height: 100%;
+  padding: 2rem;
+  min-width: 350px;
+  background-color: var(--color-bg);
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  border-color: #d31a2b !important;
+  color: #d31a2b !important;
+}
+
+.p-menubar {
+  gap: 20px;
+  border-bottom: 2px solid #d31a2b;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link {
+  padding: 10px 15px !important;
+}
+
+.p-menubar img {
+  height: 30px !important;
+}
+
+.p-slidemenu {
+  width: auto !important;
+  border-right: 2px solid #d31a2b6b;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.p-slidemenu .p-menuitem-link:not(.p-disabled):hover {
+  background: #d31a2b3d;
+}
+
+.layout-menu {
+  height: 100%;
+}
+
+.content-slide {
+  display: flex;
+  height: 100%;
+}
+
+.p-toolbar {
+  padding: 5px 15px !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+}
+
+.separador-componentes {
+  display: flex;
+  gap: 25px;
+}
+
+@media (min-width: 992px) {
+  #content-wrapper {
+    position: relative;
+    top: 0;
+  }
+}
+
+.footer {
+  grid-area: footer;
+  background: #d31a2b;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  font-size: 11px;
+}
+
+.footer img {
+  height: 25px;
+}
+
+.p-menubar
+  .p-menubar-root-list
+  > .p-menuitem
+  > .p-menuitem-link:not(.p-disabled):hover {
+  background: #d31a2b3d;
+}
+
