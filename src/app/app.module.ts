@@ -50,6 +50,8 @@ import { PgPrincipaltestComponent } from './ModuloAdministracion/pg-principaltes
 import { PgTestComponent } from './ModuloAdministracion/pg-test/pg-test.component';
 import { PgInstruccionComponent } from './ModuloAdministracion/pg-instruccion/pg-instruccion.component';
 import { PgRecomendacionComponent } from './ModuloAdministracion/pg-recomendacion/pg-recomendacion.component';
+import { PgLaboratoriosComponent } from './ModuloAdministracion/pg-laboratorios/pg-laboratorios.component';
+import { PgReservasComponent } from './ModuloAdministracion/pg-reservas/pg-reservas.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +72,9 @@ import { PgRecomendacionComponent } from './ModuloAdministracion/pg-recomendacio
     PgPrincipaltestComponent,
     PgTestComponent,
     PgInstruccionComponent,
-    PgRecomendacionComponent
+    PgRecomendacionComponent,
+    PgLaboratoriosComponent,
+    PgReservasComponent
   ],
   imports: [
     BrowserModule,

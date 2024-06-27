@@ -11,7 +11,6 @@ export class ServiciosWeb {
   authToken: any;
   constructor(private http: HttpClient, server: UrlServicios, private hpptclient: HttpClient) {
     this.urlServiciosTest = server.urlServicio ;
-    
   }
 
 //LISTADO ACTIVOS
@@ -19,7 +18,7 @@ ListadoSeccionActivos() {
   let headers = new HttpHeaders();
   headers.append('Content-Type', 'application/json');
 //   let parametros = opcion + "/" + tipo + "/" + codCarrera + "/" + param;
-  return this.hpptclient.get<any>(this.urlServiciosTest + '/wsSimulador/rutaseccion/ListadoSeccionActivos/true')
+  return this.hpptclient.get<any>(this.urlServiciosTest + 'api/laboratorio/')
 }
 
 ListadoInstruccionActivos() {
@@ -39,19 +38,25 @@ ListadoSeccion() {
     let headers = new HttpHeaders();
     headers.append('Content-Type', 'application/json');
     //  let parametros = opcion + "/" + tipo + "/" + codCarrera + "/" + param;
-    return this.hpptclient.get<any>(this.urlServiciosTest + '/wsSimulador/rutaseccion/ListadoSeccionTodos')
+    return this.hpptclient.get<any>(this.urlServiciosTest + 'api/laboratorio/')
 }
 
 ListadoInstruccion() {
   let headers = new HttpHeaders();
   headers.append('Content-Type', 'application/json');
-  return this.hpptclient.get<any>(this.urlServiciosTest + '/wsSimulador/rutainstruccion/ListadoInstruccionTodos')
+  return this.hpptclient.get<any>(this.urlServiciosTest + '/api/laboratorio/')
 }
 
 ListadoRecomendacion() {
   let headers = new HttpHeaders();
   headers.append('Content-Type', 'application/json');
   return this.hpptclient.get<any>(this.urlServiciosTest + '/wsSimulador/rutarecomendacion/ListadoRecomendacionTodos')
+}
+
+ListadoLaboratorios() {
+  let headers = new HttpHeaders();
+  headers.append('Content-Type', 'application/json');
+  return this.hpptclient.get<any>(this.urlServiciosTest + '/api/laboratorio/')
 }
 
 //ACTUALIZACION 

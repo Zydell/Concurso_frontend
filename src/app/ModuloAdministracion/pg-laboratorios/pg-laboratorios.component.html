@@ -1,7 +1,7 @@
 <div class="card separador-componentes">
     <p-toolbar>
       <div class="p-toolbar-group-center">
-        <p>INFORMACIÓN RESERVAS</p>
+        <p>INFORMACIÓN LABORATORIOS</p>
       </div>
       <div class="p-toolbar-group-end">
         <p-button
@@ -30,18 +30,23 @@
             NOMBRE <p-sortIcon field="code"></p-sortIcon>
           </th>
           <th pSortableColumn="code" >
-            DESCRIPCIÓN <p-sortIcon field="code"></p-sortIcon>
+            CAPACIDAD <p-sortIcon field="code"></p-sortIcon>
           </th>
+          <th># MÁQUINAS</th>
+          <th >HORARIO</th>
           <th >ESTADO</th>
-          <th >ACCIONES</th>
+          <th>ACCIONES</th>
         </tr>
       </ng-template>
 
       <ng-template pTemplate="body" let-customer>
         <tr>
-          <td>{{ customer.id_instruccion }}</td>
-          <td>{{ customer.str_nombre }}</td>
-          <td>{{ customer.str_descripcion }}</td>
+          <td>{{ customer.laboratorio_id }}</td>
+          <td>{{ customer.horarioaten_id }}</td>
+          <td>{{ customer.nombre }}</td>
+          <td>{{ customer.capacidad }}</td>
+          <td>{{ customer.cantequipos }}</td>
+    
           <td>
             <p-tag *ngIf="customer.bl_estado == false" severity="danger" [value]="'DESACTIVADO'"></p-tag>
             <p-tag *ngIf="customer.bl_estado == true" severity="success" [value]="'ACTIVO'"></p-tag>
