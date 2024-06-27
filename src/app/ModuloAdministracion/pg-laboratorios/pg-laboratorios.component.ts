@@ -17,7 +17,7 @@ export class PgLaboratoriosComponent implements OnInit{
   strDescripcion:any="";
   strEstado:any="";
 
-  laboratori_id:any="";
+  laboratorio_id:any="";
   horarioaten_id:any="";
   nombre:any="";
   capacidad:any="";
@@ -60,10 +60,13 @@ ModalCambiarEstado(seleccion:any) {
 }
   async ListadoInformacion() {
     const data = await new Promise<any>(resolve => this.servicios.ListadoLaboratorios().subscribe(translated => { resolve(translated) }));
+    console.log("ESTAMOS AQUI XDXD")
     console.log(data)
-    if (data.success) {
-      this.lsListado=data.datos;
-    }
+    //if (data.success) {
+      this.lsListado=data;
+      console.log("INGRESA XDXD")
+    //}
+    console.log(this.lsListado)
   }
   
   async RegistrarNuevo(){
