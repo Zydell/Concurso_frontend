@@ -52,6 +52,7 @@ import { PgInstruccionComponent } from './ModuloAdministracion/pg-instruccion/pg
 import { PgRecomendacionComponent } from './ModuloAdministracion/pg-recomendacion/pg-recomendacion.component';
 import { PgLaboratoriosComponent } from './ModuloAdministracion/pg-laboratorios/pg-laboratorios.component';
 import { PgReservasComponent } from './ModuloAdministracion/pg-reservas/pg-reservas.component';
+import { PgLoginComponent } from './Modulos_user/pg-login/pg-login.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { PgReservasComponent } from './ModuloAdministracion/pg-reservas/pg-reser
     PgInstruccionComponent,
     PgRecomendacionComponent,
     PgLaboratoriosComponent,
-    PgReservasComponent
+    PgReservasComponent,
+    PgLoginComponent
   ],
   imports: [
     BrowserModule,

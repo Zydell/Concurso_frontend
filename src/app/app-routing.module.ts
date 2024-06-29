@@ -6,6 +6,7 @@ import { DashboardadminComponent } from './Template/templateAdmin/dashboardadmin
 import { PortadainicialComponent } from './Template/templatePublico/portadainicial/portadainicial.component';
 import { PgPrincipaladministracionComponent } from './ModuloAdministracion/pg-principaladministracion/pg-principaladministracion.component';
 import { PgPrincipaltestComponent } from './ModuloAdministracion/pg-principaltest/pg-principaltest.component';
+
 const routes: Routes = [
   {
     path: '',
